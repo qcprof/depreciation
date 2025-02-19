@@ -19,6 +19,7 @@ export default function Page() {
             type="number"
             name="cost"
             id="cost"
+            value={cost}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
@@ -34,6 +35,7 @@ export default function Page() {
             type="number"
             name="sv"
             id="sv"
+            value={salvageValue}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
@@ -49,6 +51,7 @@ export default function Page() {
             type="number"
             name="ul"
             id="ul"
+            value={usefulLife}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
