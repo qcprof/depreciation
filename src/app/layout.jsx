@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Menubar from "@/components/Menubar";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,27 +24,8 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Link href="/" className="text-blue-600 hover:text-blue-800 px-4 py-2">
-          Home
-        </Link>
-        <Link
-          href="/straight-line"
-          className="text-blue-600 hover:text-blue-800 px-4 py-2"
-        >
-          Straight Line Depreciation
-        </Link>
-        <Link
-          href="/about"
-          className="text-blue-600 hover:text-blue-800 px-4 py-2"
-        >
-          About Us
-        </Link>
-        <Link
-          href="/contact"
-          className="text-blue-600 hover:text-blue-800 px-4 py-2"
-        >
-          Contact Us
-        </Link>
+        <Menubar />
+        
         {children}
       </body>
     </html>
