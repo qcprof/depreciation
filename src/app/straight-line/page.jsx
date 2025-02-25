@@ -1,9 +1,15 @@
+'use client'
+import { useState } from "react"
+
 export default function Page() {
-  const cost = 10000
-  const salvageValue = 1000
-  const usefulLife = 3
+  const [cost, setCost] = useState(0)
+  const [salvageValue, setSalvageValue] = useState(0)
+  const [usefulLife, setUsefulLife] = useState(0)
   
   const annualDepreciation = (cost - salvageValue) / usefulLife
+  // const sydDepreciation
+  // const ddbDepreciation
+
   return (
     <>
       <h1 className="ml-5 mb-4 text-3xl text-gray-600 ">Straight Line</h1>
@@ -20,6 +26,7 @@ export default function Page() {
             name="cost"
             id="cost"
             value={cost}
+            onChange={(e) => setCost(parseInt(e.target.value))}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
