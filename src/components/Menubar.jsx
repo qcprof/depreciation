@@ -13,6 +13,12 @@ export default function Menubar() {
         Straight Line Depreciation
       </Link>
       <Link
+        href="/syd"
+        className="text-blue-600 hover:text-blue-800 px-4 py-2"
+      >
+        SYD Depreciation
+      </Link>
+      <Link
         href="/about"
         className="text-blue-600 hover:text-blue-800 px-4 py-2"
       >
